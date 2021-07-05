@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout</title>
+    </head>
+    <style>
+    .one
+    {
+        height: 100px;
+        width: 1200px;
+        /* border: 2px solid red; */
+        margin: auto;
+    }
+
+    .one > p
+    {
+        color: rgb(255,125,95);
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .one > h2
+    {
+        color : rgb(16,24,35);
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .two
+    {
+        height: 300px;
+        width: 1200px;
+        /* border: 2px solid green; */
+        margin: auto;
+    }
+     
+    .imageBorder1
+     {
+         height: 250px;
+         width: 350px;
+         /* border: 2px solid yellow; */
+         float: left;
+         margin : 15px;
+     } 
+     .imageBorder1 > image 
+     {
+         margin-right: 10px;
+     }
+
+     .imageBorder1 > p
+    {
+        color:rgb(188,192,194);
+    }
+
+    .imageBorder1 > div 
+    {
+        color : rgb(101,104,117);
+        
+    }
+
+
+     .imageBorder2
+     {
+         height: 250px;
+         width: 350px;
+         /* border: 2px solid orange; */
+         float: left;
+         margin : 15px;
+     }
+
+     .imageBorder2 > p
+    {
+        color:rgb(188,192,194)
+    }
+
+    .imageBorder2 > div 
+    {
+        color : rgb(101,104,117);
+    }
+
+
+     .imageBorder3
+     {
+         height: 250px;
+         width: 350px;
+         /* border: 2px solid blue; */
+         margin: 15px;
+         float: left;
+     }
+
+     .imageBorder3 > p
+    {
+        color:rgb(188,192,194);
+    }
+
+    .imageBorder3 > div 
+    {
+        color : rgb(101,104,117);
+    }
+
+    .three
+    {
+        width: 1200px;
+        height: 30px;
+        /* border :2px solid purple; */
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .three > button
+    {
+        height: 40px;
+        width: 100px;
+        background-color: rgb(255,51,0);
+        
+    }
+
+    .four 
+    {
+        width: 1200px;
+        height: 200px;
+        text-align: center;
+        /* border: 2px solid orangered; */
+        margin: auto;
+    }
+
+    .fourBorder > p
+    {
+        color: rgb(255,125,115);
+    }
+
+    .fourBorder > h2
+    {
+        color:rgb(0,0,0);
+    }
+
+    .fourBorder > h5
+    {
+        color:rgb(136,152,189);
+    }
+
+    .fourBorder > b
+    {
+        margin-top:-10px;
+        color:rgb(136,152,189);
+    }
+
+    .five
+    {
+        width: 1200px;
+        height: 180px;
+        /* border: 2px solid black; */
+        margin:auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo1
+    {
+      width: 340px;
+        height: 150px;
+        /* border: 2px solid green; */
+        float: left; 
+        margin: 5px; 
+    }
+
+    .logo1 > h3
+    {
+      margin-top: -3px;
+      color: rgb(0,8,8);
+    }
+
+    .logo1 > p
+    {
+      margin-top: -3px;
+      color: rgb(190,204,219);
+    }
+
+    .logo11
+    {
+        width: 140px;
+        height: 100px;
+        /* border: 2px solid violet; */
+        margin-left: 20px;
+        float: left;
+    }
+
+    .logo2
+    {
+       width: 340px;
+        height: 150px;
+        /* border: 2px solid green; */
+        float: left; 
+         margin: 5px;  
+    }
+
+    .logo2 > h3
+    {
+      margin-top: -3px;
+      color: rgb(0,8,8);
+      margin-left: 10px;
+    }
+
+    .logo2 > p
+    {
+      margin-top: -3px;
+      color: rgb(190,204,219);
+      margin-left: 10px;
+    }
+
+     .logo21
+    {
+        width: 140px;
+        height: 100px;
+        /* border: 2px solid violet; */
+        margin-left: 20px;
+        float: left;
+    }
+
+    .logo3
+    {
+      width: 340px;
+        height: 150px;
+        /* border: 2px solid green; */
+        float: left;  
+         margin: 5px; 
+    }
+
+    .logo3 > h3
+    {
+      margin-top: -3px;
+      color: rgb(0,8,8);
+      margin-left: 10px;
+    }
+     
+    
+    .logo3 > p
+    {
+      margin-top: -3px;
+      color: rgb(190,204,219);
+      margin-left: 10px;
+    }
+
+    .logo31
+    {
+        width: 140px;
+        height: 100px;
+        /* border: 2px solid violet; */
+        margin-left: 20px;
+        float: left;
+    }
+
+     .six
+    {
+        width: 1200px;
+        height: 180px;
+        /* border: 2px solid black; */
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo4
+    {
+      width: 340px;
+        height: 150px;
+        /* border: 2px solid green; */
+        float: left; 
+        margin: 5px; 
+    }
+
+    .logo4 > h3
+    {
+      margin-top: -3px;
+      color: rgb(0,8,8);
+      margin-left: 10px;
+    }
+
+    .logo4 > p
+    {
+      margin-top: -3px;
+       color: rgb(190,204,219);
+      margin-left: 10px;
+    }
+
+
+
+    .logo41
+    {
+        width: 140px;
+        height: 100px;
+        /* border: 2px solid violet; */
+        margin-left: 20px;
+        float: left;
+    }
+
+    .logo5
+    {
+      width: 340px;
+        height: 150px;
+        /* border: 2px solid green; */
+        float: left; 
+         margin: 5px;  
+    }
+
+    .logo5 > h3
+    {
+      margin-top: -3px;
+       color: rgb(0,8,8);
+      margin-right: 10px;
+    }
+
+    .logo5 > p
+    {
+      margin-top: -3px;
+      color: rgb(190,204,219);
+      margin-left: 10px;
+    }
+
+     .logo51
+    {
+        width: 140px;
+        height: 100px;
+         /* border: 2px solid violet; */
+        margin-left: 20px;
+        float: left;
+    }
+
+    .logo6
+    {
+      width: 340px;
+        height: 150px;
+        /* border: 2px solid green; */
+        float: left;  
+        margin: 5px; 
+    }
+
+    .logo6 > h3
+    {
+      margin-top: -3px;
+      color: rgb(0,8,8);
+      padding :5px;
+    }
+     
+    
+    .logo6 > p
+    {
+      margin-top: -3px;
+       color: rgb(190,204,219);
+    }
+
+    .logo61
+    {
+        width: 140px;
+        height: 100px;
+        /* border: 2px solid violet; */
+        margin-left: 20px;
+        float: left;
+    }
+
+
+    </style>
+    <body>
+        <div class ="one">
+            <p>NEWS & UPDATE</p>
+            <h2>Our Blog Posts</h2>
+        </div>
+
+        <div class = "two">
+            <div class ="imageBorder1">
+            <img src="https://via.placeholder.com/350x150"/>
+            <p>29th January 2019</p>
+            <div>Architectural Art Modern</div>
+            </div>
+            
+            <div class ="imageBorder2">
+                <img src="https://via.placeholder.com/350x150" />
+                <p>29th January 2019</p>
+                <div>Architectural Art Modern</div>
+            </div>
+
+            <div  class ="imageBorder3">
+                <img src="https://via.placeholder.com/350x150" />
+                <p>29th January 2019</p>
+                <div>Architectural Art Modern</div>
+            </div>
+        </div>
+
+        <div class ="three">
+            <button>View All Posts</button>
+        </div>
+
+        <div class = "four">
+            <div class="fourBorder">
+            <p>services</p>
+            <h2>Our services</h2>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, explicabo, quasi.Magni</h5>
+            <b>
+            <h5> deserunt sunt labore</h5>
+            </div> 
+        </div>
+       
+        <div class = "five">
+                <div class="logo1">
+                <div class="logo11">
+                <img src="https://via.placeholder.com/140x100"/>
+                </div>
+                <h3>Innovative Structure</h3>
+                <p>Cras sit amet nibh libero. in gravida nulla, Nulla vel metus scelerisque ante sollicitudin</p>
+                </div>
+
+                <div class="logo2">
+                    <div class="logo21">
+                        <img src="https://via.placeholder.com/140x100" />
+                    </div>
+                    <h3>Architectural Design</h3>
+                    <p>Cras sit amet nibh libero. in gravida nulla, Nulla vel metus scelerisque ante sollicitudin</p>
+                </div>
+
+                <div class="logo3">
+                    <div class="logo31">
+                        <img src="https://via.placeholder.com/140x100" />
+                    </div>
+                    <h3>Interior Design</h3>
+                    <p>Cras sit amet nibh libero. in gravida nulla, Nulla vel metus scelerisque ante sollicitudin</p>
+                </div>
+        </div>
+
+        <div class="six">
+            <div class="logo4">
+                <div class="logo41">
+                    <img src="https://via.placeholder.com/140x100" />
+                </div>
+                <h3>Modern Window Design</h3>
+                <p>Cras sit amet nibh libero. in gravida nulla, Nulla vel metus scelerisque ante</p>
+            </div>
+        
+            <div class="logo5">
+                <div class="logo51">
+                    <img src="https://via.placeholder.com/140x100" />
+                </div>
+                <h3>Experts Architect</h3>
+                <p>Cras sit amet nibh libero. in gravida nulla, Nulla vel metus scelerisque ante sollicitudin</p>
+            </div>
+        
+            <div class="logo6">
+                <div class="logo61">
+                    <img src="https://via.placeholder.com/140x100" />
+                </div>
+                <h3>Sofa Design</h3>
+                <p>Cras sit amet nibh libero. in gravida nulla, Nulla vel metus scelerisque ante sollicitudin</p>
+            </div>
+        </div>
+    </body>
+</html>
